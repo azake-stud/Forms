@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Application Form</h1>
+        <p>
+          Note: This form is to be submitted 30 days before the starting date
+        </p>
+      </header>
+      <form action="">
+        <div class="personal block">
+          <h2>Personal Information</h2>
+          <div class="row">
+            <label for="name">Name</label>
+            <input type="text" requiredtype='text' id="name" placeholder="Enter your name...">
+          </div>
+          <div class="row">
+            <label for="address">Address</label>
+            <input type="text" name="" id="address" placeholder="Enter your address...">
+          </div>
+          <div class="row">
+            <label for="email">E-mail</label>
+            <input type="text" type="email" name="" id="email" placeholder="Enter your email...">
+          </div>
+          <div class="row">
+            <label for="grade">Grade</label>
+            <input type="number" name="" id="grade" placeholder="Enter your grade..." min="1" max="11"/>
+          </div>
+          <div class="row">
+            <label for="">Phone</label>
+            <input type="tel" name="" id="" value="+996" />
+          </div>
+        </div>
+        <div class="gender block">
+          <h2>Gender</h2>
+          <div class="row">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" />
+          </div>
+          <div class="row">
+            <label for="date">Date</label>
+            <input type="date" id="date" />
+          </div>
+        </div>
+        <div class="education block">
+          <h2>Check all that apply</h2>
+          <div class="row">
+            <input type="checkbox" id="js" />
+            <label for="js">I want to learn JavaScript</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="react" />
+            <label for="react">I want to learn React</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="html" />
+            <label for="html">I want to learn HTML</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="css" />
+            <label for="css">I want to learn CSS</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="python" />
+            <label for="python">I want to learn Python</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" id="c" />
+            <label for="c">I want to learn C#</label>
+          </div>
+          <div class="row">
+            <label for="edu">Education Level:</label>
+            <select name="" id="edu">
+              <option value="bachelors">Bachelors</option>
+              <option value="masters">Masters</option>
+              <option value="masters">High School</option>
+            </select>
+          </div>
+        </div>
+        <div class="essay block">
+          <h2>Essay Section</h2>
+          <div class="row">
+            <textarea placeholder="Your essay here..." name="" id="" cols="40" rows="7"></textarea>
+          </div>
+        </div>
+        <div class="button block row">
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

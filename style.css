@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://wallpaperaccess.com/full/2494045.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    width: 60%;
+    margin: auto;
+    background-color: #50f1f1ab;
+    color:white;
+    padding: 60px 40px;
+}
+.row{
+    margin: 10px;
+    margin-left: 40px;
+}
+.personal label, label[for="date"], label[for="edu"]{
+    display: inline-block;
+    width: 200px;
+}
+::placeholder{
+    color: #306ff8;
+}
+input:focus{
+    outline-color: #306ff8;
+}
+input{
+    color: #306ff8;
+}
+button{
+    background-color: whitesmoke;
+    color: #306ff8;
+    padding: 5px 7px;
+    margin-right: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #306ff8;
+    color: white;
+    padding: 7px 9px;
+}
+input[type="number"]{
+    width: 145px;
+}
